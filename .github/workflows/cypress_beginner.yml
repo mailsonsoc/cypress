@@ -10,7 +10,7 @@ on:
       - 'cypress_beginner/**.yml'
 
 jobs:
-  cypress_beginner-tests:
+  cypress-beginner-tests:
     runs-on: ubuntu-latest
 
     steps:
