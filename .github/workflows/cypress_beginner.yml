@@ -5,9 +5,9 @@ on:
     branches:
       - main
     paths:
-      - 'cypress_beginner/**/*.js'
-      - 'cypress_beginner/**/*.json'
-      - 'cypress_beginner/**/*.yml'
+      - 'cypress_beginner/**.js'
+      - 'cypress_beginner/**.json'
+      - 'cypress_beginner/**.yml'
 
 jobs:
   cypress_beginner-tests:
