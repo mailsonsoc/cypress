@@ -5,9 +5,9 @@ on:
     branches:
       - main
     paths:
-      - 'cypress_begginer/**.js'
-      - 'cypress_begginer/**.json'
-      - 'cypress_begginer/**.yml'
+      - 'cypress/cypress_begginer/**/*.js'
+      - 'cypress/cypress_begginer/**/*.json'
+      - 'cypress/cypress_begginer/**/*.yml'
 
 jobs:
   cypress_begginer-tests:
@@ -24,8 +24,8 @@ jobs:
 
       - name: Install dependencies
         run: npm install
-        working-directory: ./cypress_begginer
+        working-directory: ./cypress/cypress_begginer
 
       - name: Run Cypress tests
         run: npm run cypress:headless
-        working-directory: ./cypress_begginer
+        working-directory: ./cypress/cypress_begginer
